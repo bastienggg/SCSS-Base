@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --color-neutral-100: #fff;
+  --color-neutral-900: #1f3049;
+  --color-primary-400: #0066ff;
+  --fs-900: 60px;
+  --fs-800: 48px;
+  --fs-700: 27px;
+  --fs-600: 24px;
+  --fs-400: 18px;
+  --size-8px: 8px;
+  --size-20px: 20px;
+  --size-36px: 36px;
+  --fw-400: 400;
+  --fw-700: 700;
+  --ff-sans: "Open-Sans", sans-serif;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25em 0.75em;
+  border-radius: 0.25rem;
+  min-width: 10ch;
+  min-height: 44px;
+  font-family: inherit;
+  font-size: 1.15rem;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  color: hsl(220, 17%, 20%);
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.btn:focus:active {
+  scale: 0.95;
+}
+
+/*# sourceMappingURL=style.css.map */

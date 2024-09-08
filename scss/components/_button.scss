@@ -1,0 +1,25 @@
+@use "../base/variable" as *;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25em 0.75em;
+  border-radius: 0.25rem;
+  min-width: 10ch;
+  min-height: 44px;
+  font-family: inherit;
+  font-size: 1.15rem;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  color: hsl(220, 17%, 20%);
+  border: 2px solid transparent;
+  cursor: pointer;
+
+  &:focus:active {
+    scale: 0.95;
+  }
+}

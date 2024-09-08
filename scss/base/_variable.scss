@@ -1,0 +1,51 @@
+// taille de marge et de padding
+$sizes: 8px, 20px, 36px;
+
+// graisse de la police
+$weight: 400, 700;
+
+// taille de la police
+$font-sizes: (
+  "900": 60px,
+  "800": 48px,
+  "700": 27px,
+  "600": 24px,
+  "400": 18px,
+);
+
+// couleurs
+$colors: (
+  neutral: (
+    "100": #fff,
+    "900": #1f3049,
+  ),
+
+  primary: (
+    "400": #0066ff,
+  ),
+);
+
+// police
+$lz-police: '"Open-Sans", sans-serif';
+
+:root {
+  @each $name, $color in $colors {
+    @each $shade, $value in $color {
+      --color-#{$name}-#{$shade}: #{$value};
+    }
+  }
+
+  @each $name, $size in $font-sizes {
+    --fs-#{$name}: #{$size};
+  }
+
+  @each $size in $sizes {
+    --size-#{$size}: #{$size};
+  }
+
+  @each $w in $weight {
+    --fw-#{$w}: #{$w};
+  }
+
+  --ff-sans: #{$lz-police};
+}
