@@ -2,7 +2,7 @@
 
 # IMPORTANT
 
-ne pas oublier de faire la comande nmp run sass:w
+ne pas oublier de faire la commande ; npm run sass:w
 
 # liste des variables :
 
