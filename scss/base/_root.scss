@@ -1,0 +1,26 @@
+@use "../abstracts/" as *;
+
+:root {
+  @each $name, $color in $colors {
+    @each $shade, $value in $color {
+      --clr-#{$name}-#{$shade}: #{$value};
+    }
+  }
+
+  @each $name, $size in $font-sizes {
+    --fs-#{$name}: #{$size};
+  }
+
+  @each $name, $size in $sizes {
+    --size-#{$name}: #{$size};
+  }
+
+  @each $w in $weight {
+    --fw-#{$w}: #{$w};
+  }
+
+  --ff-sans: #{$lz-police};
+  --ff-serif: #{$lz-serif};
+  --ff-sans-cond: #{$lz-sans-cond};
+  --ff-sans-normal: #{$lz-sans-normal};
+}
