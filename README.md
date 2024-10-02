@@ -80,16 +80,16 @@ la c'est un dégrader de rouge
 
 les c'eest du noire avec différent opactité
 
---clr-transparent-100: hsla(0, 0%, 0%, 0.1);
---clr-transparent-200: hsla(0, 0%, 0%, 0.2);
---clr-transparent-300: hsla(0, 0%, 0%, 0.3);
---clr-transparent-400: hsla(0, 0%, 0%, 0.4);
---clr-transparent-500: hsla(0, 0%, 0%, 0.5);
---clr-transparent-600: hsla(0, 0%, 0%, 0.6);
---clr-transparent-700: hsla(0, 0%, 0%, 0.7);
---clr-transparent-800: hsla(0, 0%, 0%, 0.8);
---clr-transparent-900: hsla(0, 0%, 0%, 0.9);
---clr-transparent-1000: hsl(0, 0%, 0%);
+--clr-opacity-100: hsla(0, 0%, 0%, 0.1);
+--clr-opacity-200: hsla(0, 0%, 0%, 0.2);
+--clr-opacity-300: hsla(0, 0%, 0%, 0.3);
+--clr-opacity-400: hsla(0, 0%, 0%, 0.4);
+--clr-opacity-500: hsla(0, 0%, 0%, 0.5);
+--clr-opacity-600: hsla(0, 0%, 0%, 0.6);
+--clr-opacity-700: hsla(0, 0%, 0%, 0.7);
+--clr-opacity-800: hsla(0, 0%, 0%, 0.8);
+--clr-opacity-900: hsla(0, 0%, 0%, 0.9);
+--clr-opacity-1000: hsl(0, 0%, 0%);
 
 les on a les font sizes
 
@@ -125,3 +125,32 @@ et la il y a une typo de base
 --ff-serif: "Bellefair", serif;
 --ff-sans-cond: "Barlow-Condensed", sans-serif;
 --ff-sans-normal: "Barlow", sans-serif;
+
+# Tuto pour utiliser les mixins
+
+Bien sûr! Le code que vous avez sélectionné est un extrait de SCSS (Sass), un préprocesseur CSS qui ajoute des fonctionnalités comme les variables, les mixins, et les fonctions. Voici une explication de ce que fait ce code et comment l'utiliser :
+
+Explication du Code
+Définition des Breakpoints:
+
+Ici, vous définissez une carte (map) de breakpoints avec des tailles minimales et maximales pour différentes tailles d'écran (sm, md, lg, xl, xxl).
+Mixin de Breakpoint:
+
+Ce mixin permet de générer des règles CSS conditionnelles basées sur les breakpoints définis.
+Il prend deux paramètres : $breakpoint (le nom du breakpoint ou une valeur personnalisée) et $direction (par défaut min pour min-width, mais peut être max pour max-width).
+Il vérifie si le breakpoint existe dans la carte $breakpoints. Si oui, il utilise les valeurs min ou max correspondantes. Sinon, il utilise la valeur personnalisée fournie.
+Comment Utiliser ce Mixin
+Pour utiliser ce mixin dans votre fichier SCSS, vous pouvez l'inclure dans vos règles CSS comme suit :
+
+Explication de l'Utilisation
+Définir une Classe:
+
+Ici, .my-class a une couleur de texte bleue par défaut.
+Inclure le Mixin pour un Breakpoint Spécifique:
+
+Pour les écrans de taille sm et plus grands (min-width: 576px), la couleur du texte devient rouge.
+Inclure le Mixin pour un Breakpoint avec max-width:
+
+Pour les écrans de taille md et plus petits (max-width: 767.98px), la couleur du texte devient verte.
+Conclusion
+Ce mixin est très utile pour écrire des styles réactifs de manière concise et maintenable. Vous pouvez facilement adapter vos styles en fonction des différentes tailles d'écran en utilisant les breakpoints définis.
